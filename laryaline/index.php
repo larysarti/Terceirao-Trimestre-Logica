@@ -30,16 +30,18 @@
 		}else{
 
 			if($cont % 2 ==0){
-				print('<tr class="pares">
-				<td>' .$partes[$cont]. '</td>
-				</tr>');
+				$cor= 'cinza';
 
 			}else{
-				print('<tr class="impar">
-				<td>' .$partes[$cont]. '</td>
-				</tr>');
+				$cor= 'branco';
 
 			}
+
+		print('<tr class=" '.$cor. '">
+			<td><a href="contato.php?cod='.$partes[0].'">'. $partes[1].'</a></td>
+			<td>'.$partes[3].'</td>
+			</tr>');
+
 		}
 
 		$cont++;
